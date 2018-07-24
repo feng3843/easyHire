@@ -1,0 +1,14 @@
+{
+	"miniprogramRoot": "./client",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"appid": "wx1836918ed875780c",
+	"projectname": "easyHire",
+	"libVersion": "2.0.0",
+	"condition": {}
+}

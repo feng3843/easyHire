@@ -1,0 +1,50 @@
+{
+  "pages":[
+    
+    "pages/staff/staff",
+    "pages/hrLogs/hrLogs",
+    "pages/contactInformationList/contactInformationList",
+    "pages/contactInformationDetail/contactInformationDetail",
+    "pages/userInfo/userInfo",
+    "pages/staffDetail/staffDetail",
+    "pages/login/login",
+    "pages/personInfo/personInfo",
+    "pages/companyInfo/companyInfo",
+    "pages/recharge/recharge",
+    "pages/uploadBL/uploadBL",
+    "pages/city/city"
+  ],
+  "window":{
+    "backgroundColor":"#F6F6F6",
+    "backgroundTextStyle":"black",
+    "navigationBarBackgroundColor": "#696",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#696",
+    "backgroundColor": "#f3f3f3",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/staff/staff",
+        "text": "大厅",
+        "iconPath": "images/staff_nor.png",
+        "selectedIconPath": "images/staff.png"
+      },
+     
+      {
+        "pagePath": "pages/userInfo/userInfo",
+        "text": "我的",
+        "iconPath": "images/userInfo_nor.png",
+        "selectedIconPath": "images/userInfo.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000
+  },
+  "debug": false
+
+}

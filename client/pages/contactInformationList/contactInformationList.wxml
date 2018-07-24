@@ -1,0 +1,38 @@
+<view class='body'>
+<block wx:if="{{CIList.length > 0}}">
+  <view wx:for="{{CIList}}" class="personal-cell" bindtap='personalCellClick' data-person="{{item}}">
+    <image src="{{item.avatarUrl||'/images/avatar.png'}}" class="avatar" lazy-load></image>
+    <view class="right">
+      <view class='nametextrow'>
+        <text class='bigvalue'>{{item.name}}</text>
+        <text class='value' style='margin-left:100rpx;'>{{item.sex}}</text>
+        <text class='value' space="emsp"> / </text>
+        <text class='value'>{{item.age && item.age+'岁'}}</text>
+      </view>
+      <view class='textrow'>
+        <image src='/images/like.png' class="positionImg"></image>
+        <text class='value'>{{item.targetCity}}</text>
+      </view>
+      <view class='textrowaddress'>
+        <image src='/images/position.png' class="positionImg"></image>
+        <text class='addressvalue'>{{item.address}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="listbottomView">
+    <text>没有更多了...</text>
+  </view>
+</block>
+
+
+
+  
+<block wx:if="{{CIList.length == 0 && getResult}}">
+<view class='noLogs'>
+      <text class='bigTitle'>暂无记录</text>
+      <view class='tips'>
+        <text>Tips:人才大厅是按照用户活跃度排序的</text>
+      </view>
+    </view>
+</block>
+</view>

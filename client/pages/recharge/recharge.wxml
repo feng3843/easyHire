@@ -1,0 +1,40 @@
+<view class='body'>
+  
+  <view class='pdcell'>
+    <image src='/images/gold.png' class='gold'></image>
+    <text class='description'>10金豆,可查看10个求职者资料</text>
+    <view class='old'><text class='fee'>原价: 60.00元</text></view>
+    <text class='fee now'>优惠: 50.00元</text>
+    <button class='buy' data-id = "50" bindtap='goRecharge'>购 买</button>
+  </view>
+
+   <view class='pdcell'>
+    <image src='/images/gold.png' class='gold'></image>
+    <text class='description'>30金豆,可查看30个求职者资料</text>
+    <view class='old'><text class='fee'>原价: 180.00元</text></view>
+    <text class='fee now'>优惠: 145.00元</text>
+    <button class='buy' data-id = "145" bindtap='goRecharge'>购 买</button>
+  </view>
+
+
+ <view class='pdcell'>
+    <image src='/images/gold.png' class='gold'></image>
+    <text class='description'>100金豆,可查看100个求职者资料</text>
+    <view class='old'><text class='fee'>原价: 600.00元</text></view>
+    <text class='fee now'>优惠: 450.00元</text>
+    <button class='buy' data-id = "450" bindtap='goRecharge'>购 买</button>
+  </view>
+
+
+ <view class='pdcell'>
+    <image src='/images/gold.png' class='gold'></image>
+    <text class='description'>500金豆,可查看500个求职者资料</text>
+    <view class='old'><text class='fee'>原价: 3000.00元</text></view>
+    <text class='fee now'>优惠: 2000.00元</text>
+    <button class='buy' data-id = "2000" bindtap='goRecharge' >购 买</button>
+  </view>
+
+
+  
+
+</view>

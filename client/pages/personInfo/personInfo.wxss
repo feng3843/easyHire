@@ -1,0 +1,119 @@
+/* pages/userInfo/registe/registe.wxss */
+.body {
+  display: flex;
+  flex-direction: column;
+  background: #f6f6f6;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+
+}
+
+#fristChild{
+  padding-top: 30rpx;
+}
+
+#btn_yzm {
+  font-size: 20rpx;
+  color: #fff;
+  background-color: #669966;
+  border-radius: 8rpx;
+  height:60rpx;
+  width: 150rpx;
+  line-height: 60rpx;
+  margin-left: 10rpx;
+  box-sizing: border-box;
+}
+
+#btn_yzm::after{border: none;}
+
+#btn_yzm[disabled]{
+  background: #999;
+  color: #fff;
+}
+
+
+
+
+.beginAuth{
+  width: 200rpx;
+  height: 50rpx;
+  color: #fff;
+  background: #696;
+  font: 26rpx bold;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+}
+
+.rowlist{
+  flex-direction: row;
+  display: flex;
+  margin: 10rpx; 
+  width: 100%;
+  font-size: 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #999;
+}
+
+.duohang{
+  height: 120rpx;
+  align-items: flex-start;
+  line-height: 30rpx;
+}
+
+.name{
+  width: 190rpx;
+  text-align: right;
+}
+
+.value{
+  width: 380rpx;
+  margin: 0rpx;
+  padding-left: 20rpx;
+  background: #fff;
+  height: 60rpx;
+  border-radius: 8rpx;
+  text-align: left;
+}
+
+.picker{
+  background: #eee;
+  border-radius: 22rpx;
+  text-align: left;
+}
+
+.address{
+  background: #eee;
+  border-radius: 22rpx;
+  text-align: left;
+  height: 120rpx;
+  line-height: 30rpx;
+  padding-top: 10rpx;
+}
+
+.placeholder{
+  font-size: 30rpx;
+  color: #999;
+  text-align: left;
+}
+
+.btn{
+  height: 70rpx;
+  width: 50%;
+  background: #696;
+  color: #fff;
+  font-size: 30rpx;
+  line-height: 70rpx;
+  margin-top: 80rpx;
+}
+
+.checkbox-group{
+  margin: 5rpx ; 
+  margin-left: 150rpx ; 
+  width: 100%;
+  font-size: 26rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  color: #999;
+}

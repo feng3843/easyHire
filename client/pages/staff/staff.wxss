@@ -1,0 +1,108 @@
+/* pages/staff/staff.wxss */
+
+
+.body{
+  height: 100%;
+  background: #fff;
+}
+
+.listbottomView{
+  text-align: center;
+  color: #696;
+  height: 60rpx;
+  width: 100%;
+  line-height: 60rpx;
+  background: #e1e1e1;
+}
+
+.bigvalue{
+  font-size: 40rpx;
+  color: #333;
+  align-self: center;
+}
+
+.personal-cell{
+  height: 240rpx;
+  width: 100%;
+  background: #f3f3f3;
+  margin-bottom: 10rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.avatar{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 30rpx;
+  box-sizing: border-box;
+}
+
+.right{
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  width: 520rpx;
+  height: 100%;
+  text-align: left;
+  font-size: 24rpx;
+  line-height: 30rpx;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+
+.nametextrow{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+
+.textrow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.textrowaddress{
+  display: flex;
+  flex-direction: row;
+  height: 60rpx;
+  margin-top: 20rpx;
+}
+
+
+.name{
+  width: 120rpx;
+}
+
+.addressvalue{
+ width: 440rpx;
+ overflow: hidden;
+}
+
+
+.positionImg{
+  width: 32rpx;
+  height: 32rpx;
+  line-height: 60rpx;
+  margin-right: 15rpx;
+}
+
+
+
+.image{
+  height:30rpx;
+  width:30rpx;
+}

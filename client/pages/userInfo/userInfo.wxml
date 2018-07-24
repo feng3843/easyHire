@@ -1,0 +1,107 @@
+<!--pages/userInfo/userInfo.wxml-->
+<view class="body">
+
+  <view class="topView">
+
+    <image src="{{avatarUrl}}" class="avatar" mode="aspectFill" bindtap='changeAvatar'>
+    </image>
+
+
+    <view class="nameView">
+      <text class="nickName"> {{nickName}}</text>
+
+
+    <text class="jindou" wx:if='{{authType ==2}}'> 金豆 ：{{checkTimes}} 个</text>
+
+      <view class="nameViewMid">
+        <image src="{{authType == 0?'/images/no_shield.png':'/images/shield.png'}}" class="sheld"></image>
+        <text class="authInfo"> {{authType != 0?'已认证':'未认证'}}</text>
+      </view>
+
+      
+
+    </view>
+
+    <block wx:if="{{authType == 1 && isfinding}}">
+      <view class='refreshView'>
+        <button bindtap='refreshResume' id='refreshBtn' size='mini' disabled="{{isfinding==false || refreshTimes == 0}}">置顶</button>
+        <text class='refreshTimes'>今日剩余{{refreshTimes}}次</text>
+      </view>
+    </block>
+
+
+
+  </view>
+
+  <!--未认证  -->
+  <block wx:if="{{authType == 0}}">
+    <view class="AuthBtnView">
+      <view class='AuthBtn' bindtap='personAuth'>
+        <image src="/images/warn.png" class="warnImg"></image>
+        <text>个人认证</text>
+      </view>
+      <view class='AuthBtn' bindtap='companyAuth'>
+        <image src="/images/warn.png" class="warnImg"></image>
+        <text>公司认证</text>
+      </view>
+    </view>
+  </block>
+  <!--个人认证  -->
+  <block wx:elif="{{authType == 1}}">
+    <view bindtap='editInfo' class="cell">
+      <text class="cellLabel">修改信息</text>
+      <image src="/images/detail.png" class="detailimage"></image>
+    </view>
+
+    <view bindtap='hrCkeckedLog' class="cell">
+      <text class="cellLabel">人事查看记录</text>
+      <image src="/images/detail.png" class="detailimage"></image>
+    </view>
+
+
+
+
+
+    <block wx:if='{{isfinding}}'>
+      <text style='color: #999;font-size: 40rpx;text-align: center;margin-top:40rpx;'>当前有<text style='color: #669966;'> {{rank -1}} </text>人排在我前面</text>
+    </block>
+
+
+    <view class="imageView">
+      <image class="func_image" src="{{isfinding?'../../images/open.png':'../../images/closed.png'}}" mode="aspectFit" bindtap="tapImg"></image>
+    </view>
+
+
+    <text class="{{isfinding?'textViewOpen':'textViewClose'}}">{{isfinding?"开启成功，等着工作来找你吧！":"快开启一键找工作吧！"}}</text>
+
+  </block>
+  <!--公司认证  -->
+  <block wx:elif="{{authType == 2}}">
+    <view class='line'></view>
+    <view bindtap='editInfo' class="cell">
+      <text class="cellLabel">修改基本信息</text>
+      <image src="/images/detail.png" class="detailimage"></image>
+    </view>
+    <view bindtap='uploadBusinessLicense' class="cell">
+      <text class="cellLabel">上传营业执照</text>
+      <image src="/images/detail.png" class="detailimage"></image>
+    </view>
+    <view bindtap='myCkeckedLog' class="cell">
+      <text class="cellLabel">我的购买记录</text>
+      <image src="/images/detail.png" class="detailimage"></image>
+    </view>
+    <view bindtap='goRecharge' class="cell">
+      <text class="cellLabel">去充值</text>
+      <image src="/images/detail.png" class="detailimage"></image>
+    </view>
+  </block>
+
+
+
+
+
+
+
+
+
+</view>

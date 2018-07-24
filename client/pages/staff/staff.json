@@ -1,0 +1,7 @@
+{
+  "onReachBottomDistance": 0,
+  "navigationBarBackgroundColor": "#696",
+  "navigationBarTitleText": "人才大厅",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

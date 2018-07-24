@@ -1,0 +1,77 @@
+<!--pages/userInfo/registe/registe.wxml-->
+<view class='body'>
+
+  <view class='rowlist' id = "fristChild">
+    <text class="name" space="emsp">姓  名：</text>
+    <input class="value" placeholder='请填写真实姓名' placeholder-class='placeholder' value='{{name}}' bindblur='nameinput'></input>
+  </view>
+  <view class='rowlist'>
+    <text class="name" space="emsp">手  机：</text>
+    <input class="value" placeholder='11位手机号码' placeholder-class='placeholder' type='number' value='{{phone}}' bindblur='phoneinput'></input>
+  </view>
+  <view class='rowlist'>
+    <text class="name" space="ensp">验 证 码：</text>
+    <input class="value" placeholder='手机验证码' placeholder-class='placeholder' type='number' bindblur='codeinput'></input>
+    <button id="btn_yzm" catchtap="getYzm" disabled="{{yzmDisabled}}">
+      <text>{{yzm}}</text>
+    </button>
+  </view>
+  <view class='rowlist'>
+    <text class="name" space="emsp">性  别：</text>
+    <picker bindchange="bindPickerChangesex" value="{{sexindex}}" range="{{sexarray}}">
+      <view class="value picker">
+        {{sex==""?sexarray[sexindex]:sex}}
+      </view>
+    </picker>
+  </view>
+  <view class='rowlist'>
+    <text class="name">出生日期：</text>
+    <picker mode="date" value="{{pick_date}}" start="1950-01-01" end="{{nowDate}}" bindchange="bindPickerChangebirthday">
+      <view class="value picker">
+        {{birthday == "" ?pick_date:birthday}}
+      </view>
+    </picker>
+  </view>
+  <view class='rowlist'>
+    <text class="name" space="emsp">身  高：</text>
+    <picker bindchange="bindPickerChangeheight" value="{{heightindex}}" range="{{heightarray}}">
+      <view class="value picker">
+        {{height == "" ?heightarray[heightindex]:height}}
+      </view>
+    </picker>
+  </view>
+  <view class='rowlist'>
+    <text class="name" space="emsp">体  重：</text>
+    <picker bindchange="bindPickerChangeweight" value="{{weightindex}}" range="{{weightarray}}">
+      <view class="value picker">
+        {{weight == "" ? weightarray[weightindex] : weight}}
+      </view>
+    </picker>
+  </view>
+
+<view class='rowlist'>
+    <text class="name" space="emsp">期望城市：</text>
+    <text bindtap = "selectCity" class="value picker">{{targetCity?targetCity:"请选择期望城市"}}</text>
+  </view>
+
+<view class='rowlist duohang'>
+    <text class="name" space="emsp">现居地址：</text>
+    <block wx:if="{{userLocationAuth}}">
+    <text bindtap = "selectAddress" class="value address" space="emsp">{{address?address:"请选择居住地址"}}</text>
+    </block>
+    <block wx:else>
+     <button class="beginAuth" style = "line-height: 50rpx;" open-type="openSetting" >打开授权</button>
+    </block>
+  </view>
+
+  <view class='checkbox-group'> 
+    <checkbox-group bindchange="checkboxChange">
+    <checkbox value="checked" checked="{{checked}}"/>本人确保所填信息真实
+</checkbox-group>
+  </view> 
+
+  <button class='btn' bindtap='confirmTap'>提 交</button>
+
+
+
+</view>

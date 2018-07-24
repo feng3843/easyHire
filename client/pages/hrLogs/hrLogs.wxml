@@ -1,0 +1,24 @@
+<!--pages/hrLogs/hrLogs.wxml-->
+
+<view class='body'>
+
+  <block wx:if="{{hrLogs.length > 0}}">
+    <view wx:for="{{hrLogs}}" class='cell'>
+      <text id='time'>{{item.time}}</text>
+      <text id='name'>{{item.companyName}}<text id='smallTitle'> 索取了您的联系方式</text></text>
+    </view>
+  </block>
+
+
+  <block wx:if="{{hrLogs.length == 0 && getResult}}">
+    <view class='noLogs'>
+      <text class='bigTitle'>暂无记录</text>
+      <view class='tips'>
+        <text>Tips:</text>
+        <text space='emsp'>  1. 记得一键求职按钮要打开哟</text>
+        <text space='emsp'>  2. 个人资料要真实填写</text>
+        <text space='emsp'>  3. 经常置顶非常重要</text>
+      </view>
+    </view>
+  </block>
+</view>

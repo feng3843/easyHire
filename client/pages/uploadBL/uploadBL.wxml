@@ -1,0 +1,24 @@
+<view class='body'>
+
+
+    <text class="name" id='fristChild'>点击图片选择营业执照</text>
+
+
+    <image class="image" catchtap="chooseImageTap" src="{{imageUrl?imageUrl:'/images/license.png'}}"  type="acceptFit"></image>
+
+
+    <block wx:if="{{showImgTooBig}}">
+      <text class="imgtooBig" space="emsp">  *上传文件必须小于5M</text>
+    </block>
+
+
+
+  <view class='checkbox-group'>
+    <checkbox-group bindchange="checkboxChange">
+      <checkbox value="checked" checked="{{checked}}" />本人确保所填信息真实，并为此承担所有法律责任
+    </checkbox-group>
+  </view>
+
+  <button class='btn' bindtap='confirmTap'>提 交</button> 
+  
+   </view>

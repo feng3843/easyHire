@@ -1,0 +1,140 @@
+/* pages/companyInfo/companyInfo.wxss */
+.body {
+  display: flex;
+  flex-direction: column;
+  background: #f6f6f6;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+
+}
+
+#fristChild{
+  padding-top: 20rpx;
+}
+
+#btn_yzm {
+  font-size: 20rpx;
+  color: #fff;
+  background-color: #669966;
+  border-radius: 8rpx;
+  height:60rpx;
+  width: 150rpx;
+  line-height: 60rpx;
+  margin-left: 10rpx;
+  box-sizing: border-box;
+}
+
+
+#btn_yzm::after{border: none;}
+
+#btn_yzm[disabled]{
+  background: #999;
+  color: #fff;
+}
+
+
+.rowlist{
+  flex-direction: row;
+  display: flex;
+  margin: 10rpx ; 
+  width: 100%;
+  font-size: 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #999;
+}
+
+
+.checkbox-group{
+  margin: 5rpx ; 
+  margin-left: 150rpx ; 
+  width: 100%;
+  font-size: 26rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  color: #999;
+}
+
+.rowlist-textarea{
+  flex-direction: row;
+  display: flex;
+  margin: 10rpx; 
+  width: 100%;
+  font-size: 30rpx;
+  height: 140rpx;
+  line-height: 60rpx;
+  color: #999;
+}
+
+.name{
+  width: 190rpx;
+  text-align: right;
+}
+
+.five{
+  font-size: 30rpx;
+}
+
+.value{
+  width: 400rpx;
+  text-align: left;
+  margin: 0rpx;
+  padding-left: 15rpx;
+  background: #fff;
+  height: 60rpx;
+  border-radius: 8rpx;
+  font-size: 30rpx;
+  box-sizing: border-box;
+}
+
+.textarea{
+  height: 120rpx;
+  text-align: left;
+  padding-left: 15rpx;
+  padding-right: 15rpx; 
+  font-size: 30rpx;
+  width: 400rpx;
+  margin: 0rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  line-height: 30rpx;
+  padding-top: 5rpx;
+  box-sizing: border-box;
+}
+
+.picker{
+  background: #eee;
+  border-radius: 22rpx;
+  text-align: center;
+}
+
+.placeholder{
+  font-size: 30rpx;
+  color: #999;
+}
+
+
+
+
+.btn{
+  height: 70rpx;
+  width: 50%;
+  background: #696;
+  color: #fff;
+  font-size: 30rpx;
+  line-height: 70rpx;
+  margin-top: 30rpx;
+}
+
+.image{
+  height: 200rpx;
+  width: 200rpx;
+}
+
+.imgtooBig{
+  font-size:24rpx;
+  line-height:200rpx;
+  height:200rpx;
+  color: red;
+  }

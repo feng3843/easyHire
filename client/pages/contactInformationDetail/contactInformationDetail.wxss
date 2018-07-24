@@ -1,0 +1,105 @@
+
+
+.body{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: #f3f3f3;
+}
+
+.top{
+  display: flex;
+  background: #696;
+  width: 100%;
+  height: 300rpx;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.avatarView{
+  width: 140rpx;
+  height: 140rpx;
+
+  position: relative;
+}
+
+.avatar{
+  position: absolute;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  top:0%;
+  left: 0%;
+  background: #fff;
+}
+
+.nickName{
+  width: 33%;
+  color: #fff;
+  font-size: 36rpx blod;
+  text-align: center;
+  line-height: 36rpx;
+  margin-top: 40rpx;
+}
+
+
+.cell{
+  width: 90%;
+  height: 67rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 15rpx;
+  overflow: hidden;
+  box-sizing: border-box;
+  line-height: 26rpx;
+}
+
+.call{
+  margin-left: 50rpx;
+  height: 64rpx;
+  width: 64rpx;
+  line-height: 64rpx;
+}
+
+.phonecell{
+  width: 90%;
+  height: 67rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  line-height: 67rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+
+.duohangcell{
+  width: 90%;
+  height: 120rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 25rpx;
+  overflow: hidden;
+  box-sizing: border-box;
+  line-height: 26rpx;
+}
+
+.value{
+  font-size: 26rpx ;
+  color: #999;
+}
+
+.btn{
+  margin-top: 50rpx;
+  height: 60rpx;
+  width: 60%;
+  border-radius: 5rpx;
+  line-height: 60rpx;
+  background: #696;
+  color: #fff;
+  font-size: 28rpx;
+  font-weight: bold;
+}/* pages/contactInformationDetail/contactInformationDetail.wxss */

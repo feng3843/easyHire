@@ -1,0 +1,34 @@
+/* pages/login/login.wxss */
+
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #696;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.topView{
+  display: flex;
+  background: #696;
+  width: 100%;
+  height: 300rpx;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.beginAuth{
+  width: 60%;
+  height: 80rpx;
+  border-radius: 15rpx;
+  font-size: 40rpx blod;
+  line-height: 80rpx;
+  color: #696;
+  background: #fff;
+  margin-top:30rpx;
+}

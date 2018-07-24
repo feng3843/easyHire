@@ -1,0 +1,44 @@
+<view class='body'>
+
+  <view class="top">
+
+    <view class="avatarView">
+      <image src="{{user.avatarUrl || '/images/avatar.png'}}" class="avatar" mode="aspectFill"></image>
+    </view>
+    <text class="nickName"> {{user.name}}</text>
+
+  </view>
+
+  <view class='cell'>
+      <text space = "nbsp" class = "value">性  别 ：{{user.sex}}</text>
+  </view>
+
+  <view class='cell'>
+      <text space = "nbsp" class = "value">年  龄 ：{{user.age && user.age+'岁'}}</text>
+  </view>
+
+  <view class='cell'>
+      <text space = "nbsp" class = "value">身  高 ：{{user.height}}</text>
+  </view>
+
+  <view class='cell'>
+      <text space = "nbsp"class = "value">体  重 ：{{user.weight}}</text>
+  </view>
+
+  <view class='cell'>
+      <text space = "nbsp"class = "value">期望城市 ：{{user.targetCity}}</text>
+  </view>
+
+  
+
+  <view class='phonecell'>
+      <text space = "nbsp"class = "value">联系方式 ：{{user.phone}}</text>
+      <image src='/images/call.png' class='call' hidden='{{user.phone == "购买后查看"}}' bindtap='callPhoneNumber'></image>
+  </view>
+
+<view class='duohangcell'>
+      <text space = "nbsp"class = "value">现居地址 ：{{user.address}}</text>
+  </view>
+
+
+</view>

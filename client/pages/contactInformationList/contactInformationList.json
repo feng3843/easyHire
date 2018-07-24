@@ -1,0 +1,6 @@
+{
+  "navigationBarBackgroundColor": "#696",
+  "navigationBarTitleText": "我查看过的",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

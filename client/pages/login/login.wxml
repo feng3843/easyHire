@@ -1,0 +1,19 @@
+<!--pages/login/login.wxml-->
+ <view class='body'> 
+
+
+  <view class='topView'>
+
+
+
+    <view class='content'>
+      <text>亲，一键职场app需要您同意微信授权</text>
+      <button class="beginAuth" open-type="getUserInfo" bindgetuserinfo='bindgetuserinfo'>{{name == "登录过期"?"一键登录":"开始授权"}}</button>
+    </view>
+
+
+
+  </view>
+
+
+ </view> 
